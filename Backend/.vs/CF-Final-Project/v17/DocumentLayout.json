@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0DBFA624-3904-4389-9676-E43439273DA2}|CF-Final-Project.csproj|c:\\users\\nikos\\desktop\\cf final project\\backend\\controllers\\albumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DBFA624-3904-4389-9676-E43439273DA2}|CF-Final-Project.csproj|solutionrelative:controllers\\albumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DBFA624-3904-4389-9676-E43439273DA2}|CF-Final-Project.csproj|c:\\users\\nikos\\desktop\\cf final project\\backend\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DBFA624-3904-4389-9676-E43439273DA2}|CF-Final-Project.csproj|solutionrelative:controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DBFA624-3904-4389-9676-E43439273DA2}|CF-Final-Project.csproj|c:\\users\\nikos\\desktop\\cf final project\\backend\\controllers\\videogamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DBFA624-3904-4389-9676-E43439273DA2}|CF-Final-Project.csproj|solutionrelative:controllers\\videogamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DBFA624-3904-4389-9676-E43439273DA2}|CF-Final-Project.csproj|c:\\users\\nikos\\desktop\\cf final project\\backend\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DBFA624-3904-4389-9676-E43439273DA2}|CF-Final-Project.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DBFA624-3904-4389-9676-E43439273DA2}|CF-Final-Project.csproj|c:\\users\\nikos\\desktop\\cf final project\\backend\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DBFA624-3904-4389-9676-E43439273DA2}|CF-Final-Project.csproj|solutionrelative:controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DBFA624-3904-4389-9676-E43439273DA2}|CF-Final-Project.csproj|c:\\users\\nikos\\desktop\\cf final project\\backend\\models\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DBFA624-3904-4389-9676-E43439273DA2}|CF-Final-Project.csproj|solutionrelative:models\\album.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DBFA624-3904-4389-9676-E43439273DA2}|CF-Final-Project.csproj|c:\\users\\nikos\\desktop\\cf final project\\backend\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DBFA624-3904-4389-9676-E43439273DA2}|CF-Final-Project.csproj|solutionrelative:models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DBFA624-3904-4389-9676-E43439273DA2}|CF-Final-Project.csproj|c:\\users\\nikos\\desktop\\cf final project\\backend\\models\\videogame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DBFA624-3904-4389-9676-E43439273DA2}|CF-Final-Project.csproj|solutionrelative:models\\videogame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DBFA624-3904-4389-9676-E43439273DA2}|CF-Final-Project.csproj|c:\\users\\nikos\\desktop\\cf final project\\backend\\security\\encryptionutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DBFA624-3904-4389-9676-E43439273DA2}|CF-Final-Project.csproj|solutionrelative:security\\encryptionutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VideoGame.cs",
+              "DocumentMoniker": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\Models\\VideoGame.cs",
+              "RelativeDocumentMoniker": "Models\\VideoGame.cs",
+              "ToolTip": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\Models\\VideoGame.cs",
+              "RelativeToolTip": "Models\\VideoGame.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T15:18:04.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CommentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\Controllers\\CommentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CommentsController.cs",
+              "ToolTip": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\Controllers\\CommentsController.cs",
+              "RelativeToolTip": "Controllers\\CommentsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T15:15:18.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "Models\\Comment.cs",
+              "ToolTip": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\Models\\Comment.cs",
+              "RelativeToolTip": "Models\\Comment.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T15:17:45.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Album.cs",
+              "DocumentMoniker": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\Models\\Album.cs",
+              "RelativeDocumentMoniker": "Models\\Album.cs",
+              "ToolTip": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\Models\\Album.cs",
+              "RelativeToolTip": "Models\\Album.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAywAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T15:17:43.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T11:39:28.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VideoGamesController.cs",
+              "DocumentMoniker": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\Controllers\\VideoGamesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VideoGamesController.cs",
+              "ToolTip": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\Controllers\\VideoGamesController.cs",
+              "RelativeToolTip": "Controllers\\VideoGamesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T15:17:08.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MoviesController.cs",
+              "DocumentMoniker": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\Controllers\\MoviesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MoviesController.cs",
+              "ToolTip": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\Controllers\\MoviesController.cs",
+              "RelativeToolTip": "Controllers\\MoviesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T15:16:45.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AlbumsController.cs",
+              "DocumentMoniker": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\Controllers\\AlbumsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AlbumsController.cs",
+              "ToolTip": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\Controllers\\AlbumsController.cs",
+              "RelativeToolTip": "Controllers\\AlbumsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T15:18:56.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EncryptionUtil.cs",
+              "DocumentMoniker": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\Security\\EncryptionUtil.cs",
+              "RelativeDocumentMoniker": "Security\\EncryptionUtil.cs",
+              "ToolTip": "C:\\Users\\Nikos\\Desktop\\CF Final Project\\Backend\\Security\\EncryptionUtil.cs",
+              "RelativeToolTip": "Security\\EncryptionUtil.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T15:18:06.709Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

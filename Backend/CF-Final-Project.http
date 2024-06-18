@@ -1,0 +1,6 @@
+@CF_Final_Project_HostAddress = http://localhost:5109
+
+GET {{CF_Final_Project_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
