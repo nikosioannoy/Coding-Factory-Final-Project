@@ -1,0 +1,9 @@
+<div class="container text-center bg-light background">
+    <h1 class="border-bottom">Here`s all our Video Game reviews!</h1>
+    @if (user()) {
+        @if (user().User_Role === 'Admin') {
+            <button type="button" class="btn btn-danger my-2" (click)="onClick()">Create Video Game review</button>
+        }
+    }
+    <app-video-game-review [videoGames]="manyVideoGames"></app-video-game-review>
+</div>

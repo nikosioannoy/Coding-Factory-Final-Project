@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+    @for (movie of movies; track movie) {
+        <div class="col" >
+            <div class="my-4 review p-2  " >
+                    <h4 class=""><strong>{{movie.movieName}}</strong></h4>
+                    <img class="" src={{movie.coverImg}} alt="{{movie.coverImg}}">
+                    <a class="btn btn-danger my-3 w-75 d-block mx-auto " [routerLink]="['/movie-review-detailed/', movie.mediaID]" [routerLinkActive]="['active']" >Read Our Review</a>  
+                </div>
+         </div>    
+    }
+</div>
+</div>
+ 

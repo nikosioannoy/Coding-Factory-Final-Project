@@ -1,0 +1,11 @@
+.hover:hover {
+    cursor: pointer;
+}
+
+.alert-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

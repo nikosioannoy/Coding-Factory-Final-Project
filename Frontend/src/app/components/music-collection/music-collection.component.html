@@ -1,0 +1,9 @@
+<div class="container text-center bg-light background">
+    <h1 class="border-bottom">Here`s all our Music reviews!</h1>
+    @if (user()) {
+        @if (user().User_Role === 'Admin') {
+            <button type="button" class="btn btn-danger my-2" (click)="onClick()">Create Album review</button>
+        }
+    }
+    <app-music-review [albums]="manyAlbums"></app-music-review>
+</div>

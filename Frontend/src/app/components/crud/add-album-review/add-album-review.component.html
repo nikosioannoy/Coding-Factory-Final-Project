@@ -1,0 +1,68 @@
+<div class="container  ">
+    <div class=" border-bottom border-3 text-center " >
+        <h4>Add Music Review</h4>    
+        <div class="my-3 d-flex flex-column flex-md-row " >
+            <img class="img-fluid rounded mx-auto d-block " src={{liveImage}} >
+            <div class="flex-column text-start ms-md-3  ">
+                @if (registrationStatus.message === "Not attempted yet") {
+                    <form [formGroup]="form" class="d-flex flex-column">
+                <div class="border-bottom border-2 border-black fs-2"><strong>Title:</strong></div>
+                <input matInput type="text" formControlName="albumName">
+
+                <div class="border-bottom border-2 border-black fs-3 "><strong>Release Date:</strong> </div>
+                <input matInput type="text" placeholder="YYYY-MM-DD" formControlName="releaseDate">
+
+                <div class="border-bottom border-2 border-black fs-5 "><strong class="fs-4">Description:</strong> </div>
+                <input matInput type="text" formControlName="description">
+                
+                <div class="border-bottom border-2 border-black fs-5 "><strong class="fs-4">Runtime:</strong> </div>
+                <input matInput type="text" formControlName="runtime">
+
+                <div class="border-bottom border-2 border-black fs-5 "><strong class="fs-4">Number of Tracks:</strong> </div>
+                <input matInput type="text" formControlName="numberOfTracks">        
+
+                <div class="border-bottom border-2 border-black fs-2"><strong>Cover Image Link:</strong> </div>
+                <input matInput type="text" (blur)="fetchImage()" formControlName="coverImg">
+
+                <div class="border-bottom border-2 border-black fs-3 "><strong>Genre:</strong> </div>
+                <input matInput type="text" formControlName="genre">
+
+                <div class="border-bottom border-2 border-black fs-3 "><strong>Review:</strong> </div>
+                <textarea matInput class="mb-2" type="text" formControlName="review"></textarea>
+
+                <div class="border-bottom border-2 border-black fs-3 "><strong>Artist:</strong> </div>
+                <input matInput type="text" formControlName="artist" placeholder=''>
+
+                <div class="border-bottom border-2 border-black fs-3 "><strong>Spotify Link:</strong> </div>
+                <input matInput type="text" (blur)="fetchSpotifyPlayer()" formControlName="spotifyLink">
+
+                <div class="border-bottom border-2 border-black fs-3 "><strong>Track List:</strong> </div>
+                <input matInput type="text" formControlName="trackList" placeholder='Song_1, Song_2'>
+
+                
+
+                
+
+                <button
+                mat-flat-button
+                color="primary"
+                [disabled]="form.invalid"
+                (click)="onSubmit(form.value)"> Add Review </button>
+            </form>
+        } @else {
+            @if (registrationStatus.success) {
+                <div class="alert alert-success mt-2 w-50">
+                    <strong>Success: Album {{albumToAdd.albumName}} was added!</strong> {{ registrationStatus.message }}
+                </div>
+            } @else {
+                <div class="alert alert-danger mt-2 w-50 ">
+                    <strong>Error: Album {{albumToAdd.albumName}} was not added!</strong> {{ registrationStatus.message }}
+                </div>
+            }
+        }
+                
+            </div>
+        </div>
+        
+    </div>
+</div>

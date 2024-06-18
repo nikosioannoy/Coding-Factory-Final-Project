@@ -1,0 +1,54 @@
+<!-- <ul class="list-group">
+    @for (comment of comments; track comment) {
+        <div class="my-3">
+        <li class="list-group-item row d-flex">
+            <div class="col-4">
+                User: <strong>{{comment.username}}</strong>
+            </div>
+            <div class="col-8">commented at: {{comment.date}}</div>
+        </li>
+        <li class="row">
+            <div class="col-12">{{comment.comment}}</div>
+        </li>
+    </div>
+    }
+</ul> -->
+<div class="container">
+    <ul class="list-group">
+        @for (comment of allComments; track comment) {
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="d-flex flex-start">
+                        <img class="rounded-circle shadow-1-strong me-3"
+                        src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjkzNy1hZXctMTY1LWtsaGN3ZWNtLmpwZw.jpg" alt="avatar" width="40"
+                        height="40" />
+                        <div class="w-100">
+                            <div class="d-flex justify-content-between align-items-center mt-2 row border-bottom border-1 border-black">
+                                @if (user()) {
+                                    <h6 class="text-primary fw-bold mb-0 col-4">
+                                        {{comment.username}}
+                                        </h6>
+                                        <p class="mb-0 col-6">{{comment.date}}</p>
+                                        @if (user().User_Role === "Admin" || user().Username === comment.username) {
+                                            <button type="button" (click)="deleteComment(comment.id)" class="btn btn-danger col-2 mb-1">X</button>
+                                        }
+                                } @else {
+                                    <h6 class="text-primary fw-bold mb-0 col-6">
+                                        {{comment.username}}
+                                        </h6>
+                                        <p class="mb-0 col-6">{{comment.date}}</p>
+                                }
+                                
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <h6 class="text-body ms-2">{{comment.comment}}</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }    
+    </ul>
+</div>

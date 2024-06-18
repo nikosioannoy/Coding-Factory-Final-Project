@@ -1,0 +1,107 @@
+<div class="container  ">
+    <div class=" border-bottom border-3 text-center " >
+        @if (user() && user().User_Role === 'Admin') {
+            <div class="mt-2 d-flex justify-content-around">
+                    <button type="button" class="btn btn-warning" (click)="onClickUpdate()">Edit this review</button>
+                    <button type="button" class="btn btn-danger" (click)="onClickDelete()">Delete this review</button>        
+            </div>
+        }
+        <div class="my-3 d-flex flex-column flex-md-row " >
+            <img class="img-fluid rounded mx-auto d-block " src={{videoGameForReview.coverImg}} alt="{{videoGameForReview.coverImg}}">
+            <div class="flex-column text-start ms-md-3  ">    
+                <div class="border-bottom border-2 border-black fs-2"><strong>Title:</strong> {{videoGameForReview.gameName}}</div>
+                <div class="border-bottom border-2 border-black fs-3 "><strong>Genre:</strong> {{videoGameForReview.genre}}</div>
+                <div class="border-bottom border-2 border-black fs-3 "><strong>Release Date:</strong> {{videoGameForReview.releaseDate}}</div>
+                <!-- <div class="border-bottom border-2 border-black fs-3 "><strong>Time:</strong> {{videoGameForReview.runtime}}</div> -->
+                <div class="border-bottom border-2 border-black fs-5 "><strong class="fs-4">Description:</strong> {{videoGameForReview.description}}</div>
+                <div class="border-bottom border-2 border-black fs-3 "><strong>Publisher:</strong> {{videoGameForReview.publisher}}</div>
+                <div class="border-bottom border-2 border-black fs-3 "><strong>Platforms:</strong>
+                    @for (platform of videoGameForReview.platforms; track platform) {
+                        @if (platform == lastPlatform) {
+                            {{platform + ""}}
+                        } @else {
+                            {{platform.trim() + ","}}
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="mt-4">
+            <h3 class="text-decoration-underline ">Our Opinion</h3>
+            <div class="text-start fs-5 ">{{videoGameForReview.review}}</div>
+        </div>
+        <h3 class="text-decoration-underline">Leave a Comment</h3>
+        @if (user()) {
+            @if (commentStatus.message === 'Not attempted yet') {
+                <div class="mt-4 d-flex justify-content-center align-items-center">
+                    <div class="row w-100">
+                        <form [formGroup]="commentForm" class="d-flex flex-column col-6">
+                            <div class="border-bottom border-2 border-black fs-2">Write comment:</div>
+                            <input matInput class="mb-2" type="text" formControlName="comment"> 
+                            <button type="button" class="btn btn-warning" [disabled]="commentForm.invalid" (click)="submitComment(user().Username, commentForm.value)">Submit Comment</button>                
+                        </form>
+                        <div class="col-6">
+                            @if (!emptyComments) {
+                                <div class="container text-center">
+                                    <app-comments [mediaType]="mediaType" [mediaID]="mediaID"></app-comments>
+
+                                </div>
+                            } @else {
+                                <p>No Comments for this Review yet! Leave the first comment!</p>
+                            }
+                        </div>    
+                    </div>
+                </div>
+            } @else {
+                @if (commentStatus.success) {
+                    <div>
+                        <div class="row">
+                            <div class="alert alert-success mt-2 w-50">
+                                <strong> {{commentStatus.message}}</strong>
+                            </div>
+                            <div class="col-6">
+                                @if (!emptyComments) {
+                                    <div class="container text-center">
+                                        <app-comments [mediaType]="mediaType" [mediaID]="mediaID"></app-comments>
+    
+                                    </div>
+                                } @else {
+                                    <p>No Comments for this Review yet! Leave the first comment!</p>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    
+                } @else {
+                    <div class="alert alert-danger mt-2 w-50
+                    ">
+                        <strong> {{commentStatus.message}}</strong>
+                    </div>
+                    <div class="col-6">
+                        @if (!emptyComments) {
+                            <div class="container text-center">
+                                <app-comments [mediaType]="mediaType" [mediaID]="mediaID"></app-comments>
+                            </div>
+                        } @else {
+                            <p>No Comments for this Review yet! Leave the first comment!</p>
+                        }
+                    </div>
+                }
+            }
+        } @else {
+            <div class="row">
+                <div class="border-bottom border-2 border-black fs-2 col-6">Login to leave a comment!</div>
+                <div class="col-6">
+                    @if (!emptyComments) {
+                        <div class="container text-center">
+                            <app-comments [mediaType]="mediaType" [mediaID]="mediaID"></app-comments>
+
+                        </div>
+                    } @else {
+                        <p>No Comments for this Review yet! Leave the first comment!</p>
+                    }
+                </div>
+            </div> 
+        }
+    </div>
+</div>

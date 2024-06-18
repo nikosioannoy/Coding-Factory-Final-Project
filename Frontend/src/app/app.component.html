@@ -1,0 +1,15 @@
+  <div class="container">
+    <div class="">
+      <div class="d-flex gap-5 align-items-center text-center flex-column flex-sm-row header p-3">
+        <h1>{{title}}</h1>
+        @if (user()) {
+          <h2>Welcome <strong class="username">{{ user().Username }}</strong> to the best media review site on the whole internet! </h2>
+          <button type="button" class="btn btn-danger me-5" (click)="logout()">Logout</button>
+        } @else {
+          <h2>Welcome <strong class="username"> User </strong> to the best media review site on the whole internet! </h2>
+        }
+      </div>
+        <app-list-group-menu></app-list-group-menu>
+        <router-outlet></router-outlet>
+    </div>  
+  </div>

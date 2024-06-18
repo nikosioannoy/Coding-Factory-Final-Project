@@ -1,0 +1,46 @@
+<div class="my-0 background">
+    @if (deleteStatus.message === "Not attempted yet") {
+        <!-- [formGroup] einai h forma pou ftiaksame kai form einai to onoma ths (metavliti) -->
+    <form [formGroup]="form" class="d-flex flex-column ">
+
+        <mat-form-field>
+            <mat-label>
+                Delete User by ID
+            </mat-label>
+            <input
+            matInput
+            type="text"
+            formControlName = "id" />
+            @if (form.get('id').invalid && form.get('id').touched) {
+                <mat-error>
+                    ID is required
+                </mat-error>
+            }
+        </mat-form-field>
+        <button
+        mat-flat-button
+        color="primary"
+        [disabled]="form.invalid" (click)="deleteUser(form.value)"
+        > Delete by ID </button>
+
+    </form>
+    } @else {
+        @if (deleteStatus.success) {
+            <div class="alert alert-success mt-2 w-50">
+                <strong>Success:</strong> {{ deleteStatus.message }}
+            </div>
+        } @else {
+            <div class="alert alert-danger mt-2 w-50 ">
+                <strong>Error:</strong> {{ deleteStatus.message }}
+            </div>
+        }
+        <button 
+        mat-flat-button
+        color="primary"
+        class="mt-2"
+        (click)="deleteAnotherUser()"
+        >
+            Delete Another User
+        </button>
+    }
+</div>

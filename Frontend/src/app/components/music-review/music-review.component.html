@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+    @for (album of albums; track album) {
+        <div class="col" >
+            <div class="my-4 review p-2  " >
+                    <h4 class="fs-5 "><strong>{{album.artist}} - {{album.albumName}}</strong></h4>
+                    <img class="" src={{album.coverImg}} alt="{{album.coverImg}}">
+                    <a class="btn btn-danger my-3 w-75 d-block mx-auto " [routerLink]="['/album-review-detailed/', album.mediaID]" [routerLinkActive]="['active']" >Read Our Review</a>  
+                </div>
+         </div>    
+    }
+</div>
+</div>
+ 

@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+    @for (videoGame of videoGames; track videoGame) {
+        <div class="col" >
+            <div class="my-4 review p-2  " >
+                    <h4 class=""><strong>{{videoGame.gameName}}</strong></h4>
+                    <img class="" src={{videoGame.coverImg}} alt="{{videoGame.coverImg}}">
+                    <a class="btn btn-danger my-3 w-75 d-block mx-auto " [routerLink]="['/video-game-review-detailed/', videoGame.mediaID]" [routerLinkActive]="['active']" >Read Our Review</a>  
+                </div>
+         </div>    
+    }
+</div>
+</div>
+ 

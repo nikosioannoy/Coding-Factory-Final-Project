@@ -1,0 +1,6 @@
+<div class=" text-center background">
+<button class="my-3 btn btn-danger w-50" (click)="deleteThisUser()">Delete your Account</button>
+@if (user().User_Role == "Admin") {
+    <app-delete-any-user></app-delete-any-user>
+}
+</div>

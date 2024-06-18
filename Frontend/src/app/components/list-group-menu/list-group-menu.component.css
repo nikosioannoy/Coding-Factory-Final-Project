@@ -1,0 +1,10 @@
+a {
+    color: #E53900;
+    background-color: #E3A955;
+    font-size: larger;
+}
+
+.active {
+    background-color: #E53900;
+}
+

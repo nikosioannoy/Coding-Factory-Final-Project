@@ -1,0 +1,36 @@
+<div class="container text-center">
+
+    @if (deleteStatus.message === 'Not attempted yet') {
+    } @else if (deleteStatus.success) {
+        <div class="alertContainer">
+            <div class="alert alert-success mx-auto mt-2 w-50">
+                <strong>Success:</strong> {{ deleteStatus.message }}
+            </div>
+        </div>    
+        } @else {
+        <div class="alertContainer">
+            <div class="alert alert-danger mx-auto mt-2 w-50">
+                <strong>Error:</strong> {{ deleteStatus.message }}
+            </div>
+        </div>
+    }
+    <ul class="list-group">
+            @for (user of users; track user) {
+                <li class="list-group-item row d-flex">
+                    <div class="col">
+                        <strong>Username</strong>: {{user.username}}
+                    </div>
+                    <div class="col">
+                        <strong>Email</strong>: {{user.email}}
+                    </div>
+                    <div class="col">
+                        <strong>Role</strong>: {{user.userRole}}
+                    </div>
+                    <div class="col hover">
+                        <fa-icon (click)="onClick(user)" [icon]="faTrash"></fa-icon>  
+                    </div>    
+                </li> 
+            }   
+    </ul>
+    
+</div>

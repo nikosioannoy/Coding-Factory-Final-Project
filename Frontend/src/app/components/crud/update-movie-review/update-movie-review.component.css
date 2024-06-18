@@ -1,0 +1,12 @@
+input {
+    border: 2px solid black;
+}
+
+textarea {
+    border: 2px solid black;
+    min-height: 100px;
+}
+
+img {
+    max-height: 75vh;
+}

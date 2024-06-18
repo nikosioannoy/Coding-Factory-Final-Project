@@ -1,0 +1,51 @@
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="title">The Correct Opinion</h1>
+        <p class="lead text-muted text-shadow">Read the best, most analytical and objective reviews on the whole internet! Trust is with your time by reading our reviews about <span class="fw-bold">Video Games</span>, <span class="fw-bold">Movies</span> and <span class="fw-bold">Musical Albums</span></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 background">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 align-items-center">
+            <div class="col hover" (click)="onMovieClick()">
+            <div class="card shadow-sm">
+                <div class="image-container">
+                    <img class="movieIMG" src="{{movieToShow.coverImg}}" alt="{{movieToShow.coverImg}}">
+                </div>
+                <h1 class="textOverIMG">Movies</h1>
+
+                <div class="card-body text-center background">
+                <p class="card-text">Movie Reviews</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col hover" (click)="onAlbumClick()">
+                <div class="card shadow-sm">
+                <div class="image-container">
+                    <img class="albumIMG" src="{{AlbumToShow.coverImg}}" alt="{{AlbumToShow.coverImg}}">
+                    <h1 class="textOverIMG">Music</h1>
+                </div>
+                <div class="card-body text-center background">
+                    <p class="card-text">Music Reviews</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col hover" (click)="onGameClick()">
+                <div class="card shadow-sm">
+                    <div class="image-container">
+                        <img class="movieIMG" src="{{GameToShow.coverImg}}" alt="{{GameToShow.coverImg}}">
+                        <h1 class="textOverIMG">Games</h1>
+                    </div>
+                    <div class="card-body text-center background">
+                    <p class="card-text">Game Reviews</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.username {
+        -webkit-text-stroke-width: 0.1px;
+        -webkit-text-stroke-color: white;
+}
+
+h1 {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;   
+}
+
+h1, h2 {
+        color: #E53900;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+        background-image: linear-gradient(to bottom right, #E38B09, #E6C000);
+        max-width: max-content;
+        color: #E53900
+        
+}
